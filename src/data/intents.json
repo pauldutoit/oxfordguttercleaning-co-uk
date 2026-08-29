@@ -1,0 +1,29 @@
+[
+  {
+    "slug": "service-one",
+    "label": "Service One",
+    "shortLabel": "Service One",
+    "searchIntent": "PLACEHOLDER - describe what the searcher wants for this service, e.g. 'someone wants new casement windows and is comparing quotes'",
+    "priceFrom": "From £350",
+    "basePriceRange": [350, 900],
+    "icon": "🔨"
+  },
+  {
+    "slug": "service-two",
+    "label": "Service Two",
+    "shortLabel": "Service Two",
+    "searchIntent": "PLACEHOLDER - describe what the searcher wants for this service",
+    "priceFrom": "From £600",
+    "basePriceRange": [600, 1200],
+    "icon": "🏠"
+  },
+  {
+    "slug": "service-three",
+    "label": "Service Three",
+    "shortLabel": "Service Three",
+    "searchIntent": "PLACEHOLDER - describe what the searcher wants for this service",
+    "priceFrom": "From £89",
+    "basePriceRange": [89, 250],
+    "icon": "🔧"
+  }
+]

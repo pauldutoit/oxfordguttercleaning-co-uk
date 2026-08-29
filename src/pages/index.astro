@@ -1,0 +1,214 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import QuoteFunnel from '../components/QuoteFunnel.astro';
+import siteConfig from '../data/site.config.json';
+import intents from '../data/intents.json';
+import cities from '../data/cities.json';
+import { REASSURANCE_ICONS } from '../lib/reassuranceIcons';
+
+const telHref = `tel:${siteConfig.phone.replace(/\s+/g, '')}`;
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: (siteConfig.faq ?? []).map((f) => ({
+    '@type': 'Question',
+    name: f.question,
+    acceptedAnswer: { '@type': 'Answer', text: f.answer },
+  })),
+};
+---
+
+<BaseLayout title={`${siteConfig.siteName} | ${siteConfig.tagline}`} description={siteConfig.tagline}>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="eyebrow">{siteConfig.nicheLabel}</span>
+        <h1>{siteConfig.tagline}</h1>
+        <p class="lede">{siteConfig.subTagline}</p>
+        {siteConfig.phoneEnabled !== false && (
+          <div class="cta-row">
+            <a class="btn btn-accent" href={telHref}>Call {siteConfig.phone}</a>
+          </div>
+        )}
+        <ul class="trust-badges">
+          {siteConfig.aggregateRating && (
+            <li>&#9733; {siteConfig.aggregateRating.value}/5 ({siteConfig.aggregateRating.count} reviews)</li>
+          )}
+          <li>100% free, no obligation</li>
+          {siteConfig.disclosureText && <li>Vetted installers only</li>}
+        </ul>
+      </div>
+      <div class="hero-form-card">
+        <QuoteFunnel idSuffix="hero" />
+      </div>
+    </div>
+  </section>
+
+  {siteConfig.stats && (
+    <section class="stats-bar">
+      <div class="container stats-grid">
+        {siteConfig.stats.map((s) => (
+          <div class="stat"><strong>{s.value}</strong><span>{s.label}</span></div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our services</h2>
+        <p>Pick what you need, we'll take it from there.</p>
+      </div>
+      <div class="grid grid-3">
+        {intents.map((i) => (
+          <div class="card">
+            <a href={`/services/${i.slug}/`}>
+              {i.icon && <span class="icon">{i.icon}</span>}
+              <h3>{i.label}</h3>
+              <p>{i.searchIntent}</p>
+              {i.priceFrom && <p class="price-from">{i.priceFrom}</p>}
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {siteConfig.howItWorks && (
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-title"><h2>How it works</h2></div>
+        <div class="grid grid-3">
+          {siteConfig.howItWorks.map((step, idx) => (
+            <div class="card step-card">
+              <span class="step-number">{idx + 1}</span>
+              <h3>{step.title}</h3>
+              <p>{step.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {(siteConfig as any).reassurance?.length ? (
+    <section class="section reassurance-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Why homeowners choose us</h2>
+          <p>What we commit to, and why it's different from the usual comparison sites.</p>
+        </div>
+        <div class="reassurance-grid">
+          {(siteConfig as any).reassurance.map((r: {title: string; text: string; icon?: string}) => {
+            const iconPaths = r.icon && REASSURANCE_ICONS[r.icon] ? REASSURANCE_ICONS[r.icon] : REASSURANCE_ICONS.check;
+            return (
+              <div class="reassurance-card">
+                <span class="reassurance-check" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" set:html={iconPaths} />
+                </span>
+                <div>
+                  <h3>{r.title}</h3>
+                  <p>{r.text}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  ) : null}
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Areas we cover</h2>
+        <p>Don't see your town? Call us, we likely still cover it.</p>
+      </div>
+      <ul class="pill-list">
+        {cities.map((c, idx) => {
+          const rotated = intents[idx % intents.length];
+          return (
+            <li><a class="pill" href={`/${rotated.slug}-${c.slug}/`}>{c.name}</a></li>
+          );
+        })}
+      </ul>
+    </div>
+  </section>
+
+  <section class="price-guide">
+    <div class="container">
+      <div class="section-title">
+        <h2>UK price guide</h2>
+        <p>Typical ranges based on market data. Actual quotes depend on your city, spec and property.</p>
+      </div>
+      <div class="price-guide-table-wrap">
+        <table class="price-guide-table">
+          <thead>
+            <tr><th>Service</th><th>Typical UK range (installed)</th></tr>
+          </thead>
+          <tbody>
+            {intents.map((i) => (
+              <tr>
+                <td>{i.label}</td>
+                <td>{i.basePriceRange
+                  ? `£${i.basePriceRange[0].toLocaleString()} - £${i.basePriceRange[1].toLocaleString()}`
+                  : i.priceFrom}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="price-guide-note">Get a free tailored quote and see the exact price for your project.</p>
+      <div class="cta-row" style="justify-content:center;">
+        <a class="btn btn-accent" href="/quote">Get my free quote</a>
+      </div>
+    </div>
+  </section>
+
+  {siteConfig.testimonials && (
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-title"><h2>What customers say</h2></div>
+        <div class="grid grid-3">
+          {siteConfig.testimonials.map((t) => (
+            <div class="card testimonial-card">
+              <div class="stars" aria-label={`${t.rating} out of 5 stars`}>{'\u2605'.repeat(t.rating)}</div>
+              <p>"{t.quote}"</p>
+              <p class="testimonial-author">{t.name} &middot; {t.location}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {siteConfig.faq && (
+    <section class="section">
+      <div class="container">
+        <div class="section-title"><h2>Frequently asked questions</h2></div>
+        <div class="faq-list">
+          {siteConfig.faq.map((f) => (
+            <details class="faq-item">
+              <summary>{f.question}</summary>
+              <p>{f.answer}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="final-cta">
+    <div class="container final-cta-inner">
+      <div>
+        <h2>Ready to compare quotes?</h2>
+        <p>Free, no obligation, no cold calls. Vetted local installers only.</p>
+      </div>
+      <a class="btn btn-accent" href="/quote">Get my free quote</a>
+    </div>
+  </section>
+</BaseLayout>

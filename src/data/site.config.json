@@ -1,0 +1,45 @@
+{
+  "siteName": "Your Site Name",
+  "domain": "example.co.uk",
+  "niche": "your niche",
+  "nicheLabel": "Your Niche Quote Comparison",
+  "phone": "+44 0000 000000",
+  "phoneEnabled": false,
+  "email": "contact@example.co.uk",
+  "fromEmail": "leads@example.co.uk",
+  "tagline": "Compare quotes from trusted UK installers",
+  "subTagline": "Free, no-obligation quotes from vetted local installers - fast and unbiased, no cold calls.",
+  "disclosureText": "This site is an independent quote comparison service. We do not carry out installation work ourselves - we connect homeowners with vetted, independently-operated local installers.",
+  "logoIcon": "window",
+  "themeColor": "#0b5fa5",
+  "accentColor": "#e8590c",
+  "locale": "en-GB",
+  "legalName": "Your Site Name",
+  "legalAddress": "",
+  "_contentNotice": "Placeholder content. Replace siteName/domain/niche/tagline/testimonials/faq before deploying to production. Testimonials and stats below are illustrative examples for design preview, not confirmed facts.",
+  "matomoUrl": "",
+  "matomoSiteId": "",
+  "clarityId": "",
+  "aggregateRating": { "value": 4.8, "count": 100 },
+  "stats": [
+    { "value": "3,000+", "label": "Quotes matched" },
+    { "value": "4.8/5", "label": "Average rating" },
+    { "value": "Vetted", "label": "Installer network" },
+    { "value": "10yr", "label": "Typical guarantee" }
+  ],
+  "howItWorks": [
+    { "title": "Tell us about your project", "description": "Share a few details about what you need." },
+    { "title": "Compare free quotes", "description": "We match you with vetted local installers who compete for your job." },
+    { "title": "Choose your installer", "description": "Pick the best quote and book directly - no obligation, no pressure." }
+  ],
+  "testimonials": [
+    { "name": "PLACEHOLDER - replace before launch", "location": "London", "quote": "Replace this with a genuine customer quote before going live - never invent reviews.", "rating": 5 },
+    { "name": "PLACEHOLDER - replace before launch", "location": "Manchester", "quote": "Replace this with a genuine customer quote before going live - never invent reviews.", "rating": 5 },
+    { "name": "PLACEHOLDER - replace before launch", "location": "Birmingham", "quote": "Replace this with a genuine customer quote before going live - never invent reviews.", "rating": 5 }
+  ],
+  "faq": [
+    { "question": "How much does it cost?", "answer": "Replace with a price-anchored answer for this niche." },
+    { "question": "Is this service really free?", "answer": "Yes, comparing quotes through us is completely free for homeowners. We're funded by a referral fee paid by installers when they receive a quote request, which keeps quotes unbiased since there's no incentive to push one installer over another." },
+    { "question": "Are your installers vetted?", "answer": "Yes - we only accept installers who meet our vetting criteria (registration, insurance, guarantees) into our network." }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "_note": "Per-service enrichment used on /services/{intent}/ hubs. Keyed by intent slug. Fill in with hubIntro, hubBody[], hubTips[], commonSpecs for each service in intents.json - each hub must read genuinely differently from the others (no spun templates, no crc32). Missing intent = the hub falls back to a generic intro.",
+  "service-one": {
+    "hubIntro": "PLACEHOLDER intro for this service - one paragraph explaining what it is and when a UK homeowner needs it. Replace before launch.",
+    "hubBody": [
+      "PLACEHOLDER first body paragraph - price drivers, materials, spec choices.",
+      "PLACEHOLDER second body paragraph - installation process, timelines, what makes a good vs bad quote."
+    ],
+    "hubTips": [
+      "PLACEHOLDER tip 1 - practical thing to check before signing.",
+      "PLACEHOLDER tip 2.",
+      "PLACEHOLDER tip 3.",
+      "PLACEHOLDER tip 4."
+    ],
+    "commonSpecs": "PLACEHOLDER standard spec sheet - the typical bill of materials a decent installer will quote for this service."
+  }
+}
