@@ -1,0 +1,19 @@
+---
+import siteConfig from '../data/site.config.json';
+
+const confId = (siteConfig as any).leadsWorkConfId ?? '';
+---
+
+{confId ? (
+  <div class="leads-work-widget card">
+    <script is:inline set:html={`var id_conf = '${confId}';`} />
+    <script is:inline async src="//widget.leads.work/js/prefilled-form-load.js"></script>
+  </div>
+) : null}
+
+<style>
+  .leads-work-widget {
+    padding: 1.35rem 1.5rem;
+    min-height: 320px;
+  }
+</style>

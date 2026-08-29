@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import QuoteFunnel from '../components/QuoteFunnel.astro';
+import LeadsWorkWidget from '../components/LeadsWorkWidget.astro';
 import siteConfig from '../data/site.config.json';
 
 const testimonial = siteConfig.testimonials?.[0];
@@ -26,7 +26,7 @@ const testimonial = siteConfig.testimonials?.[0];
       )}
     </div>
 
-    <QuoteFunnel idSuffix="page" />
+    <LeadsWorkWidget />
   </div>
 </BaseLayout>
 
