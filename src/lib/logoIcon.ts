@@ -11,6 +11,11 @@ export const ICONS: Record<string, string> = {
   // Roofline: house profile with visible roof edge, fascia line, gutter run
   // and downpipe - the four elements the trade actually sells.
   roofline: '<path d="M4 17 18 5l14 12"/><line x1="4" y1="20" x2="32" y2="20"/><path d="M4 23 Q 4 26 7 26 L 29 26 Q 32 26 32 23"/><line x1="10" y1="26" x2="10" y2="31"/>',
+  // Gutter: a half-round gutter cross-section with a water droplet falling
+  // into it and a short downpipe run - reads instantly as rainwater goods.
+  // All strokes so it inherits the surrounding SVG's stroke colour cleanly
+  // in both the header badge and the favicon.
+  gutter: '<path d="M18 3 C 18 3 14 8 14 11 A 4 4 0 0 0 22 11 C 22 8 18 3 18 3 Z"/><path d="M4 15 v5 a8 8 0 0 0 8 8 h11 a5 5 0 0 0 5 -5 v-8"/><line x1="26" y1="18" x2="26" y2="30"/>',
 };
 
 export function getInitials(name: string): string {

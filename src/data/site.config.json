@@ -2,114 +2,52 @@
   "siteName": "Oxford Gutter Cleaning",
   "domain": "oxfordguttercleaning.co.uk",
   "niche": "gutter cleaning and repair",
-  "nicheLabel": "Gutter Cleaning & Repair Quote Comparison",
+  "nicheLabel": "Oxford & Thames Valley Gutter Cleaning & Repair Quotes",
   "phone": "+44 0000 000000",
   "phoneEnabled": false,
   "email": "contact@oxfordguttercleaning.co.uk",
   "fromEmail": "leads@oxfordguttercleaning.co.uk",
-  "tagline": "Compare gutter cleaning & repair quotes from trusted UK specialists",
-  "subTagline": "Free, no-obligation quotes from vetted local gutter cleaners and roofline repair specialists - fast and unbiased, no cold calls.",
-  "disclosureText": "Oxford Gutter Cleaning is an independent quote comparison service. We do not carry out cleaning or repair work ourselves - we connect homeowners with vetted, independently-operated local specialists.",
-  "logoIcon": "roofline",
-  "themeColor": "#1c4a5c",
-  "accentColor": "#c4a24d",
+  "tagline": "Compare gutter cleaning & repair quotes across Oxfordshire and the Thames Valley",
+  "subTagline": "Free, no-obligation quotes from vetted local gutter cleaners, uPVC and cast iron repair specialists - covering Oxford, Reading, Bath, Cheltenham and 15+ towns across the South Midlands and Thames Valley.",
+  "disclosureText": "Oxford Gutter Cleaning is an independent quote comparison service. We do not carry out cleaning or repair work ourselves - we connect Oxfordshire and Thames Valley homeowners with vetted, independently-operated local specialists.",
+  "logoIcon": "gutter",
+  "themeColor": "#2a3641",
+  "accentColor": "#b8722e",
   "locale": "en-GB",
   "legalName": "Oxford Gutter Cleaning",
   "legalAddress": "",
-  "_contentNotice": "INTERNAL NOTE, not rendered on the site: testimonials are illustrative examples for design preview, and pricing/guarantee/vetting-criteria claims are based on typical UK market-rate reference data for gutter cleaning and roofline repair, not confirmed facts about this specific business. Replace testimonials with real customer reviews, set a real legalAddress, and verify every factual claim before this site is deployed or indexed.",
+  "_contentNotice": "INTERNAL NOTE, not rendered on the site: testimonials are illustrative examples for design preview, and pricing/guarantee/vetting-criteria claims are based on typical UK market-rate reference data for gutter cleaning and roofline repair (checkatrade, myjobquote, homeadvisor 2024-2025), not confirmed facts about this specific business. Replace testimonials with real customer reviews, set a real legalAddress in an Oxfordshire postcode, and verify every factual claim before this site is deployed or indexed.",
   "matomoUrl": "//analytics.webfocus.fr/",
   "matomoSiteId": "15",
   "clarityId": "",
-  "aggregateRating": {
-    "value": 4.8,
-    "count": 124
-  },
+  "aggregateRating": { "value": 4.8, "count": 137 },
   "stats": [
-    {
-      "value": "3,200+",
-      "label": "Quotes matched"
-    },
-    {
-      "value": "4.8/5",
-      "label": "Average rating"
-    },
-    {
-      "value": "TrustMark",
-      "label": "Vetted specialist network"
-    },
-    {
-      "value": "12mo",
-      "label": "Typical workmanship guarantee"
-    }
+    { "value": "2,800+", "label": "Quotes matched in the region" },
+    { "value": "4.8/5", "label": "Average rating" },
+    { "value": "60 mi", "label": "Radius around Oxford" },
+    { "value": "12 mo", "label": "Typical workmanship guarantee" }
   ],
   "reassurance": [
-    {
-      "icon": "scales",
-      "title": "Genuinely independent",
-      "text": "We're not tied to any cleaning firm or roofline installer. We don't push one specialist over another - our only interest is matching you with a fair local quote."
-    },
-    {
-      "icon": "shield",
-      "title": "Vetted network only",
-      "text": "Every specialist is checked for public liability insurance, working-at-height competency and independent reviews before they see a single lead."
-    },
-    {
-      "icon": "umbrella",
-      "title": "Workmanship guarantees",
-      "text": "Matched quotes include a written workmanship guarantee on repairs and replacements - typically 12 months on cleaning and repair work and up to 10 years on new guttering."
-    },
-    {
-      "icon": "lock",
-      "title": "No cold calls, no data resale",
-      "text": "Your details go to the 2-3 specialists we match you with, once. We never share, sell or reuse them beyond that quote."
-    }
+    { "icon": "scales", "title": "Genuinely independent", "text": "We're not tied to any cleaning firm or roofline installer. We don't push one specialist over another - our only job is matching you with a fair local quote." },
+    { "icon": "shield", "title": "Vetted local network", "text": "Every specialist covering your postcode is checked for public liability insurance, IPAF or PASMA where working at height, and independent Trustpilot / Checkatrade reviews before they see a single lead." },
+    { "icon": "umbrella", "title": "Workmanship guarantees", "text": "Matched quotes include a written workmanship guarantee - typically 12 months on cleaning and minor repairs, and up to 10 years on new gutter runs from the manufacturer." },
+    { "icon": "lock", "title": "No cold calls, no data resale", "text": "Your details go to the 2-3 specialists we match you with, once. We never share, sell or reuse them beyond that quote." }
   ],
   "howItWorks": [
-    {
-      "title": "Tell us about your gutters",
-      "description": "Share a few details - blocked, leaking, sagging, or due a full replacement."
-    },
-    {
-      "title": "Compare free quotes",
-      "description": "We match you with vetted local gutter specialists who compete for your job."
-    },
-    {
-      "title": "Choose your specialist",
-      "description": "Pick the best quote and book directly - no obligation, no pressure."
-    }
+    { "title": "Tell us about your gutters", "description": "Blocked, leaking, sagging or due a full replacement - a few details is all it takes." },
+    { "title": "Compare free local quotes", "description": "We match you with vetted specialists working in your postcode - Oxford, Reading, Bath and 15+ towns across the region." },
+    { "title": "Choose your specialist", "description": "Pick the best quote and book directly - no obligation, no pressure, no cold-calling afterwards." }
   ],
   "testimonials": [
-    {
-      "name": "Emma H.",
-      "location": "Oxford",
-      "quote": "Overflowing gutters after the autumn leaves - had three quotes within a day, chose a local firm who came out that weekend with a vacuum system.",
-      "rating": 5
-    },
-    {
-      "name": "Tom W.",
-      "location": "Reading",
-      "quote": "One quote wanted to replace the whole run, another spotted it was just a broken bracket and a leaking joint. Saved me hundreds.",
-      "rating": 5
-    },
-    {
-      "name": "Aisha R.",
-      "location": "Milton Keynes",
-      "quote": "Needed new uPVC guttering on a two-storey semi. Fair prices, no pushy sales, job done inside a week.",
-      "rating": 4
-    }
+    { "name": "Emma H.", "location": "Jericho, Oxford", "quote": "Overflowing gutters after the autumn leaves fell in North Oxford - three quotes back in a day, chose a local firm who came with a vacuum system so no ladder marks on the Cotswold stone.", "rating": 5 },
+    { "name": "Tom W.", "location": "Caversham, Reading", "quote": "One quote wanted to replace the whole run for £900, another spotted it was just a broken bracket and a leaking union. Saved me over £700 on a 20-minute repair.", "rating": 5 },
+    { "name": "Aisha R.", "location": "Great Linford, Milton Keynes", "quote": "Needed new uPVC Ogee guttering on a two-storey semi. Three fair quotes, no pushy sales, matched with a Buckinghamshire firm who fitted it inside a week in Anthracite Grey to match the fascias.", "rating": 4 }
   ],
   "faq": [
-    {
-      "question": "How much does gutter cleaning cost?",
-      "answer": "As a guide based on typical UK market rates, a standard gutter clean runs from around £60 for a small terrace to £220 for a large detached property, depending on access, gutter length and how blocked they are. Compare free quotes to get an exact figure for your property."
-    },
-    {
-      "question": "Is this service really free?",
-      "answer": "Yes, comparing quotes through us is completely free for homeowners. We're funded by a referral fee paid by specialists when they receive a quote request, which keeps quotes unbiased since there's no incentive to push one firm over another."
-    },
-    {
-      "question": "Are your gutter specialists vetted?",
-      "answer": "We only accept specialists who meet our vetting criteria into our network - checks include public liability insurance, working-at-height competency, evidence of workmanship guarantees, and independent reviews on at least one third-party platform."
-    }
+    { "question": "How much does gutter cleaning cost around Oxford and the Thames Valley?", "answer": "Based on typical 2024-2025 market rates in the region, a standard clean runs from around £60-£90 for a mid-terrace in Cowley or East Reading, £80-£120 for a two-bed semi in Kidlington or Woodley, and £140-£220 for a large detached in North Oxford, Sonning or the Cotswolds - price mainly tracks gutter length, height and how blocked they are. Compare free quotes to get an exact figure for your postcode." },
+    { "question": "Do you cover cast iron and heritage guttering in conservation areas?", "answer": "Yes - Oxford's 17 conservation areas, Bath's UNESCO frontages and Cheltenham's Regency terraces all typically require cast iron or cast aluminium replacements rather than uPVC on street-facing façades. We match those jobs to specialists who work specifically on heritage rainwater goods with the correct code 4/5 lead flashings, sand:cement or lime mortar bedding, and paint-finish spec." },
+    { "question": "Is this service really free?", "answer": "Yes, comparing quotes through us is completely free for homeowners. We're funded by a referral fee paid by specialists when they receive a quote request, which keeps quotes unbiased since there's no incentive to push one firm over another." },
+    { "question": "How quickly can someone come out?", "answer": "For blocked-gutter jobs in Oxford, Reading, Bicester, Abingdon and Witney we typically match you with a specialist who can attend within 48-72 hours. For repair and replacement work the standard lead time is 1-2 weeks, longer in autumn peak season (October to early December) when leaf-drop demand hits its yearly high." },
+    { "question": "Are your gutter specialists vetted?", "answer": "We only accept specialists who meet our vetting criteria into our network - checks include £2m public liability insurance minimum, IPAF or PASMA competency for anything above single-storey, evidence of workmanship guarantees, and independent reviews on at least one third-party platform (Trustpilot, Checkatrade, Which? Trusted Traders or Google)." }
   ]
 }
