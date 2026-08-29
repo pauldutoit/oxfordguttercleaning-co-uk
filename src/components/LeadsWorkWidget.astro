@@ -2,18 +2,67 @@
 import siteConfig from '../data/site.config.json';
 
 const confId = (siteConfig as any).leadsWorkConfId ?? '';
+const accent = (siteConfig as any).accentColor ?? '#b8722e';
+const primary = (siteConfig as any).themeColor ?? '#2a3641';
 ---
 
 {confId ? (
-  <div class="leads-work-widget card">
+  <div class="leads-work-widget">
     <script is:inline set:html={`var id_conf = '${confId}';`} />
     <script is:inline src="//widget.leads.work/js/prefilled-form-load.js"></script>
   </div>
 ) : null}
 
-<style>
+<style is:global define:vars={{ accent, primary }}>
+  /* Wrapper + surface */
   .leads-work-widget {
-    padding: 1.35rem 1.5rem;
+    padding: 1.25rem 1.5rem;
     min-height: 320px;
+    background: #fff;
+    border: 1px solid rgba(42, 54, 65, 0.12);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px -12px rgba(42, 54, 65, 0.2);
+  }
+  .leads-work-widget #f-content { max-width: 100%; }
+
+  /* Loader: recolor the spinner ring from bright yellow to brand copper */
+  .leads-work-widget #f-loader { border-left-color: var(--accent) !important; }
+
+  /* Progress bar filled area (widget default #f8b323 - solid orange) */
+  .leads-work-widget [style*="#f8b323"],
+  .leads-work-widget [style*="background:#f8b323"],
+  .leads-work-widget [style*="background-color:#f8b323"],
+  .leads-work-widget [style*="background: #f8b323"],
+  .leads-work-widget [style*="background-color: #f8b323"] {
+    background-color: var(--accent) !important;
+    background: var(--accent) !important;
+  }
+
+  /* Form controls: focus ring in brand primary */
+  .leads-work-widget input[type="text"]:focus,
+  .leads-work-widget input[type="email"]:focus,
+  .leads-work-widget input[type="tel"]:focus,
+  .leads-work-widget input[type="number"]:focus,
+  .leads-work-widget textarea:focus,
+  .leads-work-widget select:focus {
+    outline: 2px solid var(--primary) !important;
+    outline-offset: 1px !important;
+    border-color: var(--primary) !important;
+  }
+
+  /* Primary submit buttons */
+  .leads-work-widget button,
+  .leads-work-widget input[type="submit"],
+  .leads-work-widget input[type="button"] {
+    background-color: var(--accent) !important;
+    border-color: var(--accent) !important;
+    color: #fff !important;
+    font-weight: 700;
+  }
+  .leads-work-widget button:hover,
+  .leads-work-widget input[type="submit"]:hover,
+  .leads-work-widget input[type="button"]:hover {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
   }
 </style>
