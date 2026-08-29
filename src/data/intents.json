@@ -1,29 +1,38 @@
 [
   {
-    "slug": "service-one",
-    "label": "Service One",
-    "shortLabel": "Service One",
-    "searchIntent": "PLACEHOLDER - describe what the searcher wants for this service, e.g. 'someone wants new casement windows and is comparing quotes'",
-    "priceFrom": "From £350",
-    "basePriceRange": [350, 900],
-    "icon": "🔨"
+    "slug": "gutter-cleaning",
+    "label": "Gutter Cleaning",
+    "shortLabel": "Gutter Cleaning",
+    "searchIntent": "someone wants their blocked or overflowing gutters cleared out and cleaned",
+    "priceFrom": "From £60",
+    "basePriceRange": [60, 220],
+    "icon": "💧"
   },
   {
-    "slug": "service-two",
-    "label": "Service Two",
-    "shortLabel": "Service Two",
-    "searchIntent": "PLACEHOLDER - describe what the searcher wants for this service",
-    "priceFrom": "From £600",
-    "basePriceRange": [600, 1200],
+    "slug": "gutter-repair",
+    "label": "Gutter Repair",
+    "shortLabel": "Gutter Repair",
+    "searchIntent": "someone has a leaking joint, sagging run, broken bracket or split downpipe and needs a fix rather than a full replacement",
+    "priceFrom": "From £80",
+    "basePriceRange": [80, 450],
+    "icon": "🔧"
+  },
+  {
+    "slug": "gutter-replacement",
+    "label": "Gutter Replacement",
+    "shortLabel": "Gutter Replacement",
+    "searchIntent": "someone wants a full run of new uPVC or cast-iron guttering, downpipes and fittings fitted",
+    "priceFrom": "From £450",
+    "basePriceRange": [450, 1600],
     "icon": "🏠"
   },
   {
-    "slug": "service-three",
-    "label": "Service Three",
-    "shortLabel": "Service Three",
-    "searchIntent": "PLACEHOLDER - describe what the searcher wants for this service",
-    "priceFrom": "From £89",
-    "basePriceRange": [89, 250],
-    "icon": "🔧"
+    "slug": "downpipe-repair",
+    "label": "Downpipe Repair & Clearing",
+    "shortLabel": "Downpipe Repair",
+    "searchIntent": "someone has a blocked, leaking or damaged downpipe and needs it cleared, resealed or replaced",
+    "priceFrom": "From £60",
+    "basePriceRange": [60, 300],
+    "icon": "🚰"
   }
 ]

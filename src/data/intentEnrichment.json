@@ -1,17 +1,59 @@
 {
-  "_note": "Per-service enrichment used on /services/{intent}/ hubs. Keyed by intent slug. Fill in with hubIntro, hubBody[], hubTips[], commonSpecs for each service in intents.json - each hub must read genuinely differently from the others (no spun templates, no crc32). Missing intent = the hub falls back to a generic intro.",
-  "service-one": {
-    "hubIntro": "PLACEHOLDER intro for this service - one paragraph explaining what it is and when a UK homeowner needs it. Replace before launch.",
+  "_note": "Per-service enrichment used on /services/{intent}/ hubs. Each service should read genuinely differently from the others - no template phrases.",
+  "gutter-cleaning": {
+    "hubIntro": "A gutter clean sounds like a small job until the first big autumn downpour and water is sheeting off the eaves onto the pointing below. Leaves, moss, seed cases and slate grit build up over the year, gutters lose their fall, and by winter the overflow starts eating into brickwork and window frames. Most UK homeowners now book a clean once every 12-18 months as basic maintenance - the same cadence as boiler servicing.",
     "hubBody": [
-      "PLACEHOLDER first body paragraph - price drivers, materials, spec choices.",
-      "PLACEHOLDER second body paragraph - installation process, timelines, what makes a good vs bad quote."
+      "The two mainstream methods are the traditional ladder-and-scoop approach and the newer wet-vac from ground level (SkyVac, Gutter Vac, industrial reach-and-wash gear). Vacuum systems have taken over because the operator stays on the ground - no scaffold, no ladder standoff scratches, faster on a two-storey, and the camera-on-a-pole means you get photo evidence of before and after. Traditional ladder work is still cheaper on a bungalow or single-storey extension.",
+      "Price mainly tracks perimeter length and height. A small terrace with 15m of gutter at eaves level runs £60-£90; a standard two-bed semi with 20-25m is £80-£120; a three-bed detached with 30-40m of gutter plus a garage run is £140-£220. Anything above the second floor or with restricted rear access (side return, conservatory in the way) pushes the price higher because a longer reach pole or tower is needed. Ask specifically whether the downpipes are flushed as part of the clean - it's the difference between a proper job and just clearing the visible mess."
     ],
     "hubTips": [
-      "PLACEHOLDER tip 1 - practical thing to check before signing.",
-      "PLACEHOLDER tip 2.",
-      "PLACEHOLDER tip 3.",
-      "PLACEHOLDER tip 4."
+      "Insist on before-and-after photos from a camera pole - it's standard practice with any vacuum-based cleaner and takes them 30 seconds.",
+      "Check the quote includes flushing the downpipes with water at the end - if only the horizontal runs are cleared, a blocked downpipe undoes the job by the next storm.",
+      "For homes with overhanging trees, ask about fitting gutter mesh or a hedgehog brush guard while they're up there - stretches the cleaning cycle from yearly to 2-3 years.",
+      "Get a written note of any faults spotted from the top - split brackets, leaking joints, holed downpipes - so the cleaning firm isn't also the one quoting to fix them."
     ],
-    "commonSpecs": "PLACEHOLDER standard spec sheet - the typical bill of materials a decent installer will quote for this service."
+    "commonSpecs": "Wet-vac system with camera-pole inspection, ground-level operation with reach up to 12m, downpipe flushing at the end, before-and-after photos supplied, all arisings bagged and removed, no ladder marks or scaffold required for standard two-storey work, £1m public liability insurance minimum."
+  },
+  "gutter-repair": {
+    "hubIntro": "A gutter that leaks, sags or overflows in one spot rarely needs the full run torn off - the usual culprits are a perished joint seal, a broken bracket, a hairline split from frost, or a downpipe with a cracked shoe. A proper repair figures out which failure it actually is before quoting. The trade problem is that some installers only sell replacements, so a diagnosed repair for £120 turns into a £900 quote for a job that didn't need doing.",
+    "hubBody": [
+      "The commonest single fault is a leaking union - the small clip-together sleeve between two lengths of uPVC gutter. The rubber EPDM seal perishes after 10-15 years and a replacement union is around £30 in parts, £80-£140 fitted including access. Second most common is a sagging run where one or two brackets have snapped or the fascia behind them has softened - re-fixing to sound timber with new brackets at 600mm centres runs £120-£220. A split downpipe or a smashed shoe at ground level is usually £60-£130.",
+      "Cast iron and cast aluminium repairs need a specialist and cost more - a leaking cast iron joint is usually recaulked with butyl mastic and re-bolted (£150-£250), and a snapped cast aluminium bracket is fabricated to match (£180-£350). Insist on a photo diagnosis before agreeing to anything above £300 - anyone selling a full replacement for what a photo would show is a fifteen-minute repair is quoting for the wrong job."
+    ],
+    "hubTips": [
+      "Ask for a photo of the actual fault before agreeing to the repair - any decent installer takes them anyway and it takes upsells off the table.",
+      "For uPVC unions, insist the new one is fitted with a fresh EPDM seal, not resealed with silicone - silicone lasts a couple of years before it lets go again.",
+      "If the fascia behind the brackets is soft, that's a joinery job, not a gutter job - get a separate quote for fascia repair before new brackets go up.",
+      "Match the profile and colour when replacing sections - a mid-run patch in a different profile always looks wrong from the street even if it works fine."
+    ],
+    "commonSpecs": "Diagnosis with camera-pole photo, uPVC union replacement with new EPDM seal, bracket re-fix at 600mm centres to sound timber, downpipe joint reseal or shoe replacement, cast iron joint recaulk with butyl mastic, cast aluminium bracket fabrication where required, profile and colour matched to existing run, 12-month workmanship guarantee on the repaired section."
+  },
+  "gutter-replacement": {
+    "hubIntro": "A full gutter replacement is the right call when the sagging is along the whole run, the material is beyond patching (perished uPVC that shatters when you touch it, or cast iron with rust holes right through), or when the fascia behind it is being replaced anyway. The other reason people replace working guttering is aesthetic - swapping white uPVC for Anthracite Grey or Black Ash to match new windows and doors is now one of the most common trade jobs.",
+    "hubBody": [
+      "For a standard two-storey semi expect around 15-20m of gutter, 8-12m of downpipe, plus outlets, angles, unions and stop ends. In uPVC that's £450-£850 fitted; in cast aluminium (period property or coastal) £1,100-£1,900; in cast iron (listed or conservation area) £1,800-£3,500. The profile choice matters as much as the material: Half Round is the default, Ogee (K-style) has a decorative front face that suits Victorian terraces, and Deepflow is a higher-capacity profile worth paying for on a large or steep roof where 112mm half-round would overflow in a storm.",
+      "The install itself makes more difference than the brochure spec. Fall should be 1:600 to 1:350 toward the outlet - too little and it pools, too much and it looks wrong from the street. Brackets at 900mm centres minimum, 600mm in exposed spots or with cast aluminium. Downpipes must discharge into a gully or soakaway, not straight onto the ground - Building Regs point often ignored on cheaper jobs. Ask about the swan-neck offset around the eaves and whether new brackets are fitted or old ones reused; reusing old brackets is why the new gutter sags in year two."
+    ],
+    "hubTips": [
+      "Ask what fall the installer is setting the gutter to - if the answer isn't a specific ratio, they don't know what they're doing.",
+      "Insist on new brackets, not reusing the old ones - Old brackets cost £2 each; a re-sagged run costs £400 to redo.",
+      "For coastal or exposed sites, ask for stainless steel fixings and marine-grade sealant rather than the standard galvanised.",
+      "Check the quote covers new outlets and stop ends, not reusing them - grey plastic parts perish faster than the gutter itself."
+    ],
+    "commonSpecs": "Half Round or Ogee 112mm uPVC gutter (or cast aluminium / cast iron on request), round 68mm downpipe with proper bracket fixings, brackets at 900mm centres, mitred external angles, running outlets, EPDM-sealed unions, clip-on stop ends, swan-neck offset at eaves, discharge to gully or soakaway, colour options: White, Black, Anthracite Grey, Brown or Ash Grey, 10-year manufacturer guarantee on materials, workmanship guarantee separately from installer."
+  },
+  "downpipe-repair": {
+    "hubIntro": "Downpipes fail in three main ways - blockages that overflow at the top, splits from frost or impact that leak down the wall, and disconnections at the shoe where the pipe meets the gully. Each has a different fix and a different price. A blocked pipe is often cleared for under £80; a snapped bracket or split section is £100-£200; a full downpipe rerun with a new offset is £200-£350. What matters is figuring out which one you've got before the quote lands.",
+    "hubBody": [
+      "Blockages are the commonest call. Leaves and moss compact at the top elbow (the shoe under the outlet) or at the swan-neck offset around the eaves, and once it overflows the leak shows up two metres below where the blockage actually is. Clearing is done with an auger rod from the top or a wet-vac from the bottom depending on access - the pipe should be flushed with water afterwards to confirm the fall. A leaking joint above the blockage often turns out to be the same seal that was flooded by the overflow, so an installer who fixes the joint without clearing the pipe is treating a symptom.",
+      "Splits and disconnections are structural. Frost damage typically opens a hairline vertical crack near ground level where the pipe holds water - the fix is section replacement with new EPDM-sealed joints and a fresh clip fixing. A pipe pulled away from the wall usually means a rusted or perished clip, replaced with new stainless-steel screw-in brackets at 1.8m centres. If the shoe at the base has fractured or the gully has silted up, that's a below-ground job and the price rises to £250-£350 depending on whether the gully needs digging out."
+    ],
+    "hubTips": [
+      "Ask whether the pipe will be flushed with water at the end of any clearing job - a clear top-elbow doesn't prove the whole run is clear.",
+      "For repeat blockages at the eaves, fit a leaf-guard cage at the outlet - £15 in parts and stops the same job coming back every autumn.",
+      "Insist on stainless steel screws for new brackets, not the plated ones a lot of firms carry - the plating rusts in 3-4 years and streaks the wall.",
+      "If the shoe at ground level is broken, get the gully checked at the same visit - a blocked gully backs up into the downpipe and undoes the repair."
+    ],
+    "commonSpecs": "Auger rod or wet-vac clearing, water-flush confirmation at the end, EPDM-sealed section replacement for split runs, stainless-steel screw-in brackets at 1.8m centres, new shoe fitting where required, leaf-guard cage at outlet on request, gully inspection at the base, matched to existing profile and colour, 12-month workmanship guarantee."
   }
 }
