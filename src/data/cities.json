@@ -5,7 +5,7 @@
     "county": "West Midlands",
     "region": "West Midlands",
     "pf": 0.91,
-    "indexable": false,
+    "indexable": true,
     "nearby": [
       "birmingham",
       "nuneaton",
@@ -50,7 +50,7 @@
     "county": "Buckinghamshire",
     "region": "South East England",
     "pf": 1.08,
-    "indexable": false,
+    "indexable": true,
     "nearby": [
       "bedford",
       "northampton",
@@ -65,7 +65,7 @@
     "county": "Northamptonshire",
     "region": "East Midlands",
     "pf": 0.92,
-    "indexable": false,
+    "indexable": true,
     "nearby": [
       "kettering",
       "leicester",
@@ -80,7 +80,7 @@
     "county": "Wiltshire",
     "region": "South West England",
     "pf": 0.97,
-    "indexable": false,
+    "indexable": true,
     "nearby": [
       "bristol",
       "oxford",
@@ -95,7 +95,7 @@
     "county": "Gloucestershire",
     "region": "South West England",
     "pf": 0.92,
-    "indexable": false,
+    "indexable": true,
     "nearby": [
       "cheltenham",
       "bristol",
@@ -140,7 +140,7 @@
     "county": "Berkshire",
     "region": "South East England",
     "pf": 1.12,
-    "indexable": false,
+    "indexable": true,
     "nearby": [
       "reading",
       "southampton",
@@ -155,7 +155,7 @@
     "county": "Warwickshire",
     "region": "West Midlands",
     "pf": 0.89,
-    "indexable": false,
+    "indexable": true,
     "nearby": [
       "coventry",
       "leamington-spa",
@@ -170,7 +170,7 @@
     "county": "Warwickshire",
     "region": "West Midlands",
     "pf": 0.95,
-    "indexable": false,
+    "indexable": true,
     "nearby": [
       "coventry",
       "warwick",
@@ -185,7 +185,7 @@
     "county": "Warwickshire",
     "region": "West Midlands",
     "pf": 0.94,
-    "indexable": false,
+    "indexable": true,
     "nearby": [
       "leamington-spa",
       "coventry",
@@ -200,7 +200,7 @@
     "county": "Warwickshire",
     "region": "West Midlands",
     "pf": 0.9,
-    "indexable": false,
+    "indexable": true,
     "nearby": [
       "coventry",
       "northampton",
@@ -215,7 +215,7 @@
     "county": "Wiltshire",
     "region": "South West England",
     "pf": 0.96,
-    "indexable": false,
+    "indexable": true,
     "nearby": [
       "southampton",
       "bristol",
@@ -230,7 +230,7 @@
     "county": "Buckinghamshire",
     "region": "South East England",
     "pf": 1.12,
-    "indexable": false,
+    "indexable": true,
     "nearby": [
       "slough",
       "oxford",
@@ -252,6 +252,6 @@
       "bedford",
       "loughborough"
     ],
-    "indexable": false
+    "indexable": true
   }
 ]
