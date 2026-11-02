@@ -143,10 +143,12 @@ export async function onRequestPost({ request, env }) {
     await env.LEAD_RATE_KV.put(key, String(count + 1), { expirationTtl: RATE_LIMIT_WINDOW_SECONDS });
   }
 
+  const site = new URL(request.url).hostname.replace(/^www\./, '');
   const leadLabel = safeServiceType || safeIntent || 'general';
   const locationLabel = safePostcode || safeCity || 'unknown';
-  const subject = `New lead - ${leadLabel} - ${locationLabel}`;
+  const subject = `[${site}] New lead - ${leadLabel} - ${locationLabel}`;
   const text = [
+    `Site: ${site}`,
     `Name: ${cleanName}`,
     `Phone: ${cleanPhone}`,
     `Email: ${cleanEmail}`,
